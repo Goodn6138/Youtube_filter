@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Shorts Filter",
+  "version": "1.0.0",
+  "description": "Filter and classify your short-form video content",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Shorts Filter"
+  },
+  "icons": {
+    "16": "icons/icon-16.jpg",
+    "48": "icons/icon-48.jpg",
+    "128": "icons/icon-128.jpg"
+  },
+  "host_permissions": ["https://*/*", "http://localhost:*/*"]
+}
