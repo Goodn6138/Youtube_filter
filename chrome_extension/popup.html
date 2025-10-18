@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shorts Filter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Shorts Filter</h1>
+      <p class="subtitle">Curate your content</p>
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="preferenceInput" 
+          placeholder="What do you want to see? (e.g., music, sports, education)"
+          class="preference-input"
+        >
+        <button id="addBtn" class="add-btn">Add</button>
+      </div>
+    </div>
+
+    <!-- Tags Section -->
+    <div class="tags-section">
+      <div id="tagsList" class="tags-list"></div>
+    </div>
+
+    <!-- Analysis Section -->
+    <div class="analysis-section">
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="videoTitle" 
+          placeholder="Video title"
+          class="video-input"
+        >
+      </div>
+      <div class="input-group">
+        <textarea 
+          id="videoDescription" 
+          placeholder="Video description"
+          class="video-input"
+          rows="3"
+        ></textarea>
+      </div>
+      <button id="analyzeBtn" class="analyze-btn">Analyze Content</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="resultsSection" class="results-section hidden">
+      <h3>Classification Results</h3>
+      <div id="resultsList" class="results-list"></div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loadingState" class="loading-state hidden">
+      <div class="spinner"></div>
+      <p>Analyzing...</p>
+    </div>
+
+    <!-- Error State -->
+    <div id="errorState" class="error-state hidden">
+      <p id="errorMessage"></p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
